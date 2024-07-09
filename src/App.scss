@@ -1,0 +1,98 @@
+$primary-color: #D8D5DB;
+$secondary-color: #5a48e0;
+$background-color: #B0D7FF;
+$black: #2D3142;
+
+#timer {
+    height: 30vh;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: $primary-color;
+}
+
+h1, div {
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.time-btn, .bottom-btn {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.time-btn:hover, .bottom-btn:hover {
+    color: $secondary-color;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.control-container {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#session-length, #break-length {
+    font-size: 30px;
+}
+
+#session-label, #break-label {
+    font-size: 20px;
+}
+
+#timer-label {
+    font-size: 30px;
+}
+
+#time-left {
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    
+    }
+    #session-length, #break-length {
+        font-size: 20px;
+    }
+    #session-label, #break-label {
+        font-size: 15px;
+    }
+    #timer-label {
+        font-size: 20px;
+    }
+    #time-left {
+        font-size: 40px;
+    }
+    .time-btn, .bottom-btn {
+        padding: 10px;
+        font-size: 20px;
+    }
+    #timer {
+        height: 22.5vh;
+    }
+    
+}
